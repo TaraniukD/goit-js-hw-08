@@ -4,9 +4,9 @@ import throttle from "lodash.throttle";
 
 const iframe = document.querySelector('iframe');
 
+    setCurrentTime()
     const player = new Player(iframe);
     const STORAGE_KEY = 'videoplayer-current-time';
-    setCurrentTime()
 
     player.on('timeupdate', throttle(timeUpdateValue, 500))
     
